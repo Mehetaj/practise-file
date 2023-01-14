@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: #dbdbff;
+}
+
+/* Header style start */
+
+/* navber style */
+
+.navber{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 150px;
+}
+
+nav ul {
+    display: flex;
+
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+     color: black;
+     margin-left: 28px;
+     font-size: 24px;
+}
+
+.search-bar{
+    width: 50px;
+    cursor: pointer;
+}
+
+.cart{
+    width: 50px;
+    cursor: pointer;
+}
+
+.title-head{
+    font-size: 29px;
+    margin-left: 200px;
+}
+
+/* Land page style of section */
+
+.land-page{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+
+.land-head{
+    font-size: 62px;
+    margin-bottom: 20px;
+}
+
+.land-para{
+    font-weight: 00;
+}
+
+.left-land{
+    margin-top: 100px;
+}
+
+.pree-btn{
+    font-size: 25px;
+    background-color: pink;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    margin-top: 40px;
+    transition: 0.5s;
+}
+
+.pree-btn:hover{
+    background-color: hotpink;color: black;cursor: pointer;
+}
+
+.right-land{
+    height: 60vh;
+   width: 30%;
+    background: url('images/main-camera.png'),url('images/Circle\ design.svg');
+    background-repeat: no-repeat;
+}
+
+/* style of main element */
+
+
+/* ecommerce style */
+
+
+.ecommerce{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.eco{
+    padding: 30px;
+}
+
+hr{
+    width: 80%;
+    margin: 0px auto;
+   background-color: beige;
+}
+
+
+/* collection style start */
+
+.coll-title{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    
+}
+
+.first-product{
+    height: 400px;
+    width: 300px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.rating{
+    color: #777577;
+    margin-top: 10px;
+}
+
+.product-details{
+    color: #757575;
+    margin-top: 15px;
+}
+
+.see{
+    margin-top: 30px;
+    margin-right: 40px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* article er gear design */
+
+article{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 120px;
+    align-items: center;
+}
+
+.gear-head{
+    font-size: 45px;
+}
+
+.gear-para{
+    color: #757575;
+    font-family: cursive;
+}
+
+.join{
+    font-size: 25px;
+    margin-top: 30px;
+    padding: 15px 28px;
+    border: none;
+    border-radius: 10px;
+    background-color: darkorange;
+    color: whitesmoke;
+    transition: all ease-in 0.3s;cursor: pointer;
+}
+
+.join:hover{
+    background-color: hotpink;
+    color: black;
+}
+
+/* footer style */
+
+
+footer{
+    margin-top: 170px;
+    height: 300px;
+    width: 100%;
+    color: darkgray;
+    background: linear-gradient(black, brown , black ,darkblue);
+}
+
+.foot-head{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.copy{
+    text-align: center;
+    margin-top: 12px;
+}
+
+.hide{
+    display: none;
+}
+
+/* style for different display */
+
+@media screen and (max-width: 676px) {
+    .list{
+        display: none;
+    }
+
+    .title-head{
+       text-align: center;
+       margin-right: 30px;
+    }
+
+    .right-land{
+        width: 100%;
+    }
+
+
+    .land-page{
+        display: flex;
+        /* grid-template-columns: repeat(1, 1fr); */
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .left-land{
+        text-align: center;
+    }
+
+    .ecommerce{
+        display: grid;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        grid-template-columns: repeat(2 ,1f);
+        flex-wrap: wrap;
+    }
+
+    .products{
+        display: flex;
+        flex-direction: column;
+    }
+
+    article{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+
+}
